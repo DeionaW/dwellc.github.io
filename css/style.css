@@ -15,6 +15,30 @@ header nav a {
   margin-right: 16px;
 }
 
+a:focus,
+a:focus-visible {
+  outline: 3px solid #E5950C;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background-color: #E5950C;
+  color: #142615;
+  padding: 12px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  left: 10px;
+  outline: 3px solid #D1D5D2;
+  outline-offset: 3px;
+}
 
 h1 {
   font-family: "Merriweather", Georgia, serif;
