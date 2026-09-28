@@ -114,3 +114,23 @@ p {
 .type-sample-h2 { font-size: 28px; }
 .type-sample-h3 { font-size: 20px; }
 .type-sample-body { font-size: 16px; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #324A2B;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #324A2B;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #D1D5D2;
+}
