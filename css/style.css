@@ -134,3 +134,10 @@ th {
 tbody tr:nth-child(even) {
   background-color: #324A2B;
 }
+
+form {
+  background-color: #D1D5D2;
+  padding: 32px;
+  border-radius: 8px;
+  max-width: 480px;
+}
