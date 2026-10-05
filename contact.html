@@ -23,6 +23,32 @@
 
   <main>
     <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="post">
+      <label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+<input type="tel" id="phone" name="phone">
+
+      <p>Which consultation are you booking?</p>
+<label for="lesson-group">Beginner Consult</label>
+<input type="radio" id="lesson-group" name="lesson-type" value="group" checked>
+
+<label for="lesson-private">Intermediate Consult</label>
+<input type="radio" id="lesson-private" name="lesson-type" value="private">
+
+      <label for="newsletter">Email me about open consults.</label>
+<input type="checkbox" id="newsletter" name="newsletter">
+
+      <label for="message">What would you like a better undersanding of to master your finances?</label>
+<textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit Form</button>
+
+</form>
     <p></p>
     <p></p>
     <a href="contact.html" class="cta">Book an Appointment</a>
