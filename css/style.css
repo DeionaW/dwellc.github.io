@@ -141,3 +141,21 @@ form {
   border-radius: 8px;
   max-width: 480px;
 }
+
+label {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  display: block;
+  margin-top: 0.25rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 2rem;
+}
