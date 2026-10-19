@@ -44,8 +44,12 @@
   <label for="lesson-expert">Expert Consult</label>
 <input type="radio" id="lesson-expert" name="lesson-type" value="expert">
 
-   <button onclick="getLocation()">Allow us to find locaitons near you!</button>
+<br>
+
+   <button onclick="getLocation()">Allow us to find locations near you!</button>
 <p id="location-message"></p>
+
+  <br>
 
       <label for="newsletter">Email me about open consults.</label>
 <input type="checkbox" id="newsletter" name="newsletter">
@@ -68,7 +72,7 @@
     var lat = position.coords.latitude.toFixed(1);
     var lon = position.coords.longitude.toFixed(1);
     document.getElementById("location-message").textContent =
-      "We've located you near " + lat + ", " + lon + ". We'll provide you with sessions available to you. ";
+      "We've located you near " + lat + ", " + lon + ". We'll provide you with sessions located closer to you. ";
   }
 
   function showError(error) {
