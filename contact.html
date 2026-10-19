@@ -44,6 +44,9 @@
   <label for="lesson-expert">Expert Consult</label>
 <input type="radio" id="lesson-expert" name="lesson-type" value="expert">
 
+   <button onclick="getLocation()">Allow us to find locaitons near you!</button>
+<p id="location-message"></p>
+
       <label for="newsletter">Email me about open consults.</label>
 <input type="checkbox" id="newsletter" name="newsletter">
 
@@ -53,6 +56,26 @@
       <button type="submit">Submit</button>
 
 </form>
+
+    
+
+    <script>
+  function getLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  }
+
+  function showPosition(position) {
+    var lat = position.coords.latitude.toFixed(1);
+    var lon = position.coords.longitude.toFixed(1);
+    document.getElementById("location-message").textContent =
+      "We've located you near " + lat + ", " + lon + ". We'll provide you with sessions available to you. ";
+  }
+
+  function showError(error) {
+    document.getElementById("location-message").textContent =
+      "We are not able to gather your location. We will gather this information during a follow up call.";
+  }
+</script>
     <p></p>
     <p></p>
     <a href="contact.html" class="cta">Schedule A Consultation</a>
