@@ -21,6 +21,44 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+nav a {
+  color: #D1D5D2;
+  text-decoration: none;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 700px) {
+  .page-layout {
+    flex-direction: row;
+  }
+
+  main {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
